@@ -25,7 +25,7 @@ public class DeathZone : MonoBehaviour
             else
             {   
                 Debug.Log("Game Over");
-                //SceneManager.LoadScene("MainMenuScene");
+                SceneManager.LoadScene("MainMenuScene");
             }
         }
         

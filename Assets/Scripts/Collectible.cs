@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
+    public GameObject particle;
     void OnTriggerEnter(Collider other)
     {
         // Проверяем, что это игрок
@@ -14,6 +15,7 @@ public class Collectible : MonoBehaviour
             }
             // Уничтожаем текущий объект
             Destroy(gameObject);
+            Instantiate(particle).transform.position = transform.position;
         }
     }
 }
